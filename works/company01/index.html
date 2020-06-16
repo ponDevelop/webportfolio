@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>
+        架空の企業サイト
+    </title>
+    <meta name="robots" content="noindex">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/drawerMenu.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">株式会社架空企業</a>
+        <nav>
+            <ul class="header_menu">
+                <li class="header_menu_item"><a href="#">会社概要</a></li>
+                <li class="header_menu_item"><a href="#">事業紹介</a></li>
+                <li class="header_menu_item"><a href="#">CSR</a></li>
+                <li class="header_menu_item"><a href="#">IR情報</a></li>
+                <li class="header_menu_item"><a href="#">採用案内</a></li>
+                <li class="header_menu_item"><a href="#" class="btn_contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <!--バーガーメニューエリア-->
+        <div id="navToggle">
+            <div>
+                <span></span> <span></span> <span></span>
+            </div>
+        </div>
+
+    </header>
+
+    <main id="main" class="clearfix">
+        <div class="top_image">
+            <p>
+                ランプ、ついてますか？
+            </p>
+        </div>
+        <div class="news">
+            <h2>新着情報</h2>
+            <input id="all" type="radio" name="tab_item" checked>
+            <label class="tab_item" for="all">お知らせ</label>
+            <input id="ir" type="radio" name="tab_item">
+            <label class="tab_item" for="ir">IR情報</label>
+            <input id="stockholder" type="radio" name="tab_item">
+            <label class="tab_item" for="stockholder">株主様へ</label>
+
+            <div class="tab_content" id="all_content">
+                <div class="tab_content_description">
+                    <ul>
+                        <li>
+                            <time datetime="2019-06-01">2019.06.01</time>
+                            <h2 class="info_new">New</h2>
+                            <p>お知らせ１</p>
+                        </li>
+                        <li>
+                            <time datetime="2019-06-01">2019.05.01</time>
+                            <h2 class="info">お知らせ</h2>
+                            <p>お知らせ２</p>
+                        </li>
+                        <li>
+                            <time datetime="2019-06-01">2019.04.01</time>
+                            <h2 class="info">お知らせ</h2>
+                            <p>お知らせ３</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab_content" id="ir_content">
+                <div class="tab_content_description">
+
+                    <ul>
+                        <li>
+                            <time datetime="2018-12-03">2018.12.03</time>
+                            <h2 class="info_new">New</h2>
+                            <p>IR情報１</p>
+                        </li>
+                        <li>
+                            <time datetime="2018-10-11">2018.10.11</time>
+                            <h2 class="info_new">お知らせ</h2>
+                            <p>IR情報２</p>
+                        </li>
+                        <li>
+                            <time datetime="2018-09-22">2018.09.22</time>
+                            <h2 class="info">お知らせ</h2>
+                            <p>IR情報３</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab_content" id="stockholder_content">
+                <div class="tab_content_description">
+                    <ul>
+                        <li>
+                            <time datetime="2019-05-29">2019.05.29</time>
+                            <h2 class="info">お知らせ</h2>
+                            <p>株主優待について</p>
+                        </li>
+                        <li>
+                            <time datetime="2018-05-10">2018.05.10</time>
+                            <h2 class="info">お知らせ</h2>
+                            <p>株主優待について</p>
+                        </li>
+                        <li>
+                            <time datetime="2017-03-04">2017.03.04</time>
+                            <h2 class="info">お知らせ</h2>
+                            <p>株主優待について</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="info_boxes">
+            <div class="info_box">
+                <h2><a>会社案内</a></h2>
+                <ul>
+                    <li>社長挨拶</li>
+                    <li>企業理念</li>
+                    <li>沿革</li>
+                    <li>会社概要</li>
+                    <li>事業所一覧</li>
+                    <li>関連会社</li>
+                </ul>
+            </div>
+        </div>
+        <div class="info_boxes">
+            <div class="info_box">
+                <h2><a>事業紹介</a></h2>
+                <ul>
+                    <li>事業１</li>
+                    <li>事業２</li>
+                    <li>事業３</li>
+                </ul>
+            </div>
+        </div>
+        <div class="info_boxes">
+            <div class="info_box">
+                <h2><a>IR情報</a></h2>
+                <ul>
+                    <li>株主・投資家の皆さまへ</li>
+                    <li>IRニュース</li>
+                    <li>IRカレンダー</li>
+                    <li>よくある質問</li>
+                    <li>お問い合わせ</li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner_area">
+            <h2>バナーエリア</h2>
+            <ul>
+                <div class="dummy_banner"></div>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="clearfix">
+        <ul class="list_menu">
+            <li class="list_item">
+                <a>会社案内</a>
+                <ul>
+                    <li>社長挨拶</li>
+                    <li>企業理念</li>
+                    <li>沿革</li>
+                    <li>会社概要</li>
+                </ul>
+            </li>
+            <li class="list_item">
+                <a>事業紹介</a>
+                <ul>
+                    <li>事業１</li>
+                    <li>事業２</li>
+                    <li>事業３</li>
+                </ul>
+            </li>
+            <li class="list_item">
+                <a>IR情報</a>
+                <ul>
+                    <li>株主・投資家の皆さまへ</li>
+                    <li>IRニュース</li>
+                    <li>IRカレンダー</li>
+                    <li>よくある質問</li>
+                    <li>お問い合わせ</li>
+                </ul>
+            </li>
+        </ul>
+
+        <small>Hayato11 All rights reserved.</small>
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+    /* humbメニューの表示、非表示 */
+    $(function () {
+        $(document).on("click", "#navToggle", function () {//headerに .openNav を付加・削除
+            $('header').toggleClass('openNav');
+        });
+    });
+
+    /*コンテンツエリアクリックでhumbメニューを閉じる*/
+    $(function () {
+        $(document).on("click", "#main", function () {//headerに .openNav を付加・削除
+            $('header').removeClass('openNav');
+        });
+    });
+</script>
+
+</html>

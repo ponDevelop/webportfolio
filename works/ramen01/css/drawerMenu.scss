@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/*drawerMenu.css */
+
+/*
+	バーガーメニューのデザイン
+*/
+#navToggle {
+	display: none;
+	position:absolute;/*to body*/
+	right:13px;
+	top:13px;
+	width:30px;
+	height:25px;
+	cursor:pointer;
+	
+	div{
+		position:relative;
+	}
+	span{
+		display:block;
+		position:absolute;/*to div*/
+		width:100%;
+		border-bottom:solid 3px #999;
+		-webkit-transition: .35s ease-in-out;
+		-moz-transition: .35s ease-in-out;
+		transition: .35s ease-in-out;	
+	}
+	span:nth-child(1) {
+		top:0;
+	}
+	span:nth-child(2) {
+		top:11px;
+	}
+	span:nth-child(3) {
+		top:22px;
+	}
+}
+
+
+/*Media-queries_____________________________________*/
+@media screen and (max-width: 680px) {
+
+	/*スマホ画面ではPC用メニューを画面外に飛ばす。*/
+	header{
+		nav {
+			position:absolute;
+			right:0;
+			top:-1000px; /*通常時はビュー外*/
+			background:rgba(255,255,255,0.7);
+			width:100%;
+			padding:0 10px;
+			transition:.5s ease-in-out;
+			text-align:center;
+		}
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			li {
+				display: block;
+				width: 100%;
+				height: 10vw;
+				line-height: 10vw;
+				font-size: 2rem;
+				//width: calc(100vw / 3);
+				//height: calc(100vw / 3 * 0.5);
+				text-align: center;
+				border-bottom: 1px solid #aaa;
+				a{
+					display:block;
+				}
+			}
+		}
+	}
+	/* Toggle(Button) */
+	#navToggle {
+		display: block;
+	}
+	/*
+		バーガーメニュークリック時のイメージ変更。
+	*/
+	.openNav{
+		nav {
+			transform: translateY(1050px);
+		}
+
+		#navToggle{
+			span:nth-child(1) {
+				top: 11px;
+				transform:rotate(-45deg);
+			}
+			span:nth-child(2),
+			span:nth-child(3) {
+				top: 11px;
+				transform:rotate(45deg);
+			}	
+		}
+	}
+}

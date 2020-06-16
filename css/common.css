@@ -1,0 +1,254 @@
+/*
+  全ページ共通スタイル
+*/
+:root{
+  --background-base-color: #fcfcfc;
+  font-size: 16px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+main{
+  /*IE対策*/
+  display: block;
+}
+
+/*
+	全体をborderまで含める。
+*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+  float解除用
+*/
+.clearfix::before{
+  content:"";
+  display:block;
+  clear: both;
+}
+
+/*
+  テキスト位置調整用
+  使用時は親要素をposition: relative;にすること。
+*/
+span.top {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+span.bottom {
+  position: absolute;
+  bottom: 0;
+}
+span.center {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.5em;
+}
+
+/*------------------------
+  PCデザイン
+------------------------*/
+body{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family:  '游ゴシック体', YuGothic,'游ゴシック', 'Yu Gothic','メイリオ','Meiryo','sans-serif';
+  font-weight: 430;
+  background-color: var(--background-base-color);
+  padding: 1vw;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul{
+  list-style-type: none;
+}
+
+h1{
+  margin-top:50px;
+  margin-left:5px;
+  margin-bottom:50px;
+  /*font-weight: lighter;*/
+  font-size: 1.2rem;
+}
+
+h2{
+  margin-top:50px;
+  margin-left:5px;
+  margin-bottom:50px;
+  font-weight: lighter;
+}
+
+
+/*
+  flex-boxでロゴとメニューを表示する
+*/
+.header_menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header_menu_item{
+  list-style-type: none;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin-left: 10px;
+}
+.header_menu_item:first-child {	
+  margin-right: auto;
+}
+.header_menu_item a {
+  background: var(--background-base-color);
+  border-bottom: 2px solid #ccc;
+  color: #333;
+  display: block;
+  padding: 0.6em 0.4em;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+
+/*
+  メニューボタンデザイン
+*/
+.btn_flat_border {
+  text-decoration: none;
+  color: #000000;
+  border-bottom: solid 2px #000000;
+/*  transition: .3s;*/
+}
+.btn_flat_border:hover {
+  background: #bababa;
+  color: white;
+  border-radius: 15px; 
+  transition: 0.3s;
+  transform: scale(1.2);
+}
+
+footer{
+  margin-top:20px;
+  width: 100%;
+  height: 30px;
+  text-align: right;
+  line-height: 30px;
+  font-size:9pt;
+}
+
+
+/*
+  ロゴサイズ指定とロゴの下線をなくす。
+*/
+.logo img{
+  width: 200px;
+}
+.logo a{
+  border-style: none;
+}
+
+
+
+/*---------------------------
+  スマホ画面
+---------------------------*/
+@media screen and (max-width: 768px) {
+  body{
+    max-width: 768px;
+  }
+  .header_menu_item img{
+    width: 150px;
+  }
+
+  /*
+    メニューは3列にする。
+  */
+  .header_menu{
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .header_menu_item{
+    flex: auto;
+    width: 33.33%;
+    margin: 0;
+  }
+  .header_menu_item a{
+    border: none;
+  }
+  
+  li.header_menu_item{
+    padding:1px;
+  }
+
+  .header_menu_item:nth-child(2n) a {
+    background-color: #e0e0e0;
+    border-radius: 5px; 
+
+  }
+  .header_menu_item:nth-child(2n-1) a {
+    background-color: #f0f0f0;
+    border-radius: 5px; 
+  }
+
+  .header_menu_item.logo a {
+    background-color: var(--background-base-color);
+  }
+
+}
+
+/*---------------------------
+  トップページアニメーション
+---------------------------*/
+.open-transition {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.open-transition.show {
+  opacity: 1;
+}
+
+.open-transition img {
+  position: absolute;
+  opacity: 0;
+  top: -100px;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.open-transition img.swing1 {
+  -webkit-animation: swing1 3s linear;
+          animation: swing1 3s linear;
+}
+
+.open-transition img.swing2 {
+  -webkit-animation: swing2 3s linear;
+          animation: swing2 3s linear;
+}
+
+.open-transition img.swing3 {
+  -webkit-animation: swing3 3s linear;
+          animation: swing3 3s linear;
+}
+
+.open-transition img.swing4 {
+  -webkit-animation: swing4 3s linear;
+          animation: swing4 3s linear;
+}

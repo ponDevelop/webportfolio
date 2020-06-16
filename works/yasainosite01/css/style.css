@@ -1,0 +1,208 @@
+@charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  font-family: 'M PLUS 1p', sans-serif; }
+
+/*
+  全体をborderまで含める。
+*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*
+  float解除用
+*/
+.clearfix::before {
+  content: "";
+  display: block;
+  clear: both; }
+
+/*
+  テキスト位置調整用
+  使用時は親要素をposition: relative;にすること。
+*/
+span.top {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+span.bottom {
+  position: absolute;
+  bottom: 0; }
+
+span.center {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.5em; }
+
+/*------------------------------
+  Main
+------------------------------*/
+body {
+  width: 100vw;
+  background-color: rgba(255, 240, 0, 0.5); }
+body header h1 {
+  text-align: center;
+  margin: 20px auto 40px auto;
+  font-size: 2rem; }
+body main {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+body main h2 {
+  margin-bottom: 20px; }
+body footer {
+  text-align: center; }
+
+.fluid_color_brue {
+  width: 150px;
+  height: 150px;
+  background: #bce2e8;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20xp; }
+
+.fluid_color_red {
+  width: 150px;
+  height: 150px;
+  background: red;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20xp; }
+
+/*  クリックされて要素表示中は、動きを停止する。 */
+.nofluid_color_brue {
+  width: 150px;
+  height: 150px;
+  background: #bce2e8; }
+
+.nofluid_color_red {
+  width: 150px;
+  height: 150px;
+  background: red; }
+
+/*-----------------
+  フキダシ左
+-----------------*/
+.balloon1-left {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0 1.5em 15px;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #e0edff; }
+
+.balloon1-left:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-right: 15px solid #e0edff; }
+
+.balloon1-left p {
+  margin: 0;
+  padding: 0; }
+
+/*-----------------
+  フキダシ上
+-----------------*/
+.balloon1-top {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #e0edff; }
+
+.balloon1-top:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-bottom: 15px solid #e0edff; }
+
+.balloon1-top p {
+  margin: 0;
+  padding: 0; }
+
+/*--------------------
+  野菜アイコンの表示
+--------------------*/
+#yasai01, #yasai02, #yasai03, #yasai04, #yasai05, #yasai06, #yasai07, #yasai08, #yasai09, #yasai10 {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+#yasai01 {
+  background-image: url(../images/bittergourd01.png); }
+
+#yasai02 {
+  background-image: url(../images/cabbage01.png); }
+
+#yasai03 {
+  background-image: url(../images/carrot01.png); }
+
+#yasai04 {
+  background-image: url(../images/corn01.png); }
+
+#yasai05 {
+  background-image: url(../images/greenbeans01.png); }
+
+#yasai06 {
+  background-image: url(../images/onion01.png); }
+
+#yasai07 {
+  background-image: url(../images/potatoes01.png); }
+
+#yasai08 {
+  background-image: url(../images/pumpkin01.png); }
+
+#yasai09 {
+  background-image: url(../images/radish01.png); }
+
+#yasai10 {
+  background-image: url(../images/tomato01.png); }
+
+/*---------------------
+  animation
+---------------------*/
+@keyframes show {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/*
+  繰り返し処理処理に書き換える。
+*/
+#yasai01_text, #yasai02_text, #yasai03_text, #yasai04_text, #yasai05_text, #yasai06_text, #yasai07_text, #yasai08_text, #yasai09_text, #yasai10_text {
+  display: none;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
+#yasai01_text p, #yasai02_text p, #yasai03_text p, #yasai04_text p, #yasai05_text p, #yasai06_text p, #yasai07_text p, #yasai08_text p, #yasai09_text p, #yasai10_text p {
+  line-height: 160%;
+  text-align: left; }
+
+#yasai01_text.show, #yasai02_text.show, #yasai03_text.show, #yasai04_text.show, #yasai05_text.show, #yasai06_text.show, #yasai07_text.show, #yasai08_text.show, #yasai09_text.show, #yasai10_text.show {
+  display: block;
+  animation: show 1s linear 0s; }
+
+/*# sourceMappingURL=style.css.map */

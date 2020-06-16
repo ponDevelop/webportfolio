@@ -1,0 +1,60 @@
+/* Required height of parents of the Half Page Carousel for proper displaying carousel itself */
+html,
+body,
+.view {
+  height: 100%; }
+
+/* Half Page Carousel itself*/
+.carousel {
+  height: 50%; }
+  .carousel .carousel-inner {
+    height: 100%; }
+    .carousel .carousel-inner .carousel-item,
+    .carousel .carousel-inner .active {
+      height: 100%; }
+
+/* Adjustment for mobile devices*/
+@media (max-width: 776px) {
+  .carousel {
+    height: 100%; } }
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #FF0000; }
+
+
+/*
+  商品の高さをそろえる
+*/
+.card{
+  height: 400px;
+}
+.view{
+  margin: 0 auto;
+}
+.card-img-top{
+  object-fit: contain;
+  width: 100%;
+  height: 100%
+}
+.navbar{
+  background-color: #FF0000;
+}
+.carousel_img01{
+  background-image: url('../images/bg/slider_mcc45th.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.carousel_img02{
+  background-image: url('../images/bg/blackbg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.carousel_img03{
+  background-image: url('../images/bg/kippu_banner_b_2_up_0325re.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}

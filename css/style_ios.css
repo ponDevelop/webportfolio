@@ -1,0 +1,12 @@
+/*
+    hobby
+*/
+.hobby_background_area1,
+.hobby_background_area2,
+.hobby_background_area3,
+.hobby_background_area4,
+.hobby_background_area5,
+.hobby_background_area6,
+.hobby_background_area7{
+    background-attachment: scroll;
+}

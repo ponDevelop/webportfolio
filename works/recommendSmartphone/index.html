@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <title>
+    おすすめスマホ2019
+  </title>
+  <meta name="robots" content="noindex">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+  <header>
+
+  </header>
+  <main>
+    <h1>あなたの使い方から選ぶ、おすすめスマホ2019秋</h1>
+    <form action="php/ajax_getReccomend.php" method="post" id="form_recommend">
+      <h2>あなたが譲れない条件は？</h2>
+      <table>
+        <tr>
+          <th>質問1</th>
+          <td>iPhoneがよい</td>
+          <td><input type="radio" name="ans1" value="1" id="yes1"><label for="yes1">はい</label></td>
+          <td><input type="radio" name="ans1" value="2" id="no1"><label for="no1">いいえ</label></td>
+          <td><input type="radio" name="ans1" value="3" id="neither1"><label for="neither1">こだわらない</label></td>
+        </tr>
+        <tr>
+          <th>質問2</th>
+          <td>androidがよい</td>
+          <td><input type="radio" name="ans2" value="1" id="yes2"><label for="yes2">はい</label></td>
+          <td><input type="radio" name="ans2" value="2" id="no2"><label for="no2">いいえ</label></td>
+          <td><input type="radio" name="ans2" value="3" id="neither2"><label for="neither2">こだわらない</label></td>
+        </tr>
+        <tr>
+          <th>質問3</th>
+          <td>電話、メール、Lineが使えればなんでもよい</td>
+          <td><input type="radio" name="ans3" value="1" id="yes3"><label for="yes3">はい</label></td>
+          <td><input type="radio" name="ans3" value="2" id="no3"><label for="no3">いいえ</label></td>
+          <td><input type="radio" name="ans3" value="3" id="neither3"><label for="neither3">こだわらない</label></td>
+        </tr>
+        <tr>
+          <th>質問4</th>
+          <td>最新機種がよい</td>
+          <td><input type="radio" name="ans4" value="1" id="yes4"><label for="yes4">はい</label></td>
+          <td><input type="radio" name="ans4" value="2" id="no4"><label for="no4">いいえ</label></td>
+          <td><input type="radio" name="ans4" value="3" id="neither4"><label for="neither4">こだわらない</label></td>
+        </tr>
+        <tr>
+          <th>質問5</th>
+          <td>コンパクトなスマホがよい</td>
+          <td><input type="radio" name="ans5" value="1" id="yes5"><label for="yes5">はい</label></td>
+          <td><input type="radio" name="ans5" value="2" id="no5"><label for="no5">いいえ</label></td>
+          <td><input type="radio" name="ans5" value="3" id="neither5"><label for="neither5">こだわらない</label></td>
+        </tr>
+        <tr>
+          <th>質問6</th>
+          <td>スマホに10万円は高すぎる！</td>
+          <td><input type="radio" name="ans6" value="1" id="yes6"><label for="yes6">はい</label></td>
+          <td><input type="radio" name="ans6" value="2" id="no6"><label for="no6">いいえ</label></td>
+          <td><input type="radio" name="ans6" value="3" id="neither6"><label for="neither6">こだわらない</label></td>
+        </tr>
+        <tr>
+          <th>質問7</th>
+          <td>最新の3Dゲームをしたい</td>
+          <td><input type="radio" name="ans7" value="1" id="yes7"><label for="yes7">はい</label>
+          </td>
+          <td><input type="radio" name="ans7" value="2" id="no7"><label for="no7">いいえ</label></td>
+          <td><input type="radio" name="ans7" value="3" id="neither7"><label for="neither7">こだわらない</label></td>
+        </tr>
+        <tr>
+          <th>質問8</th>
+          <td>写真をよく撮る</td>
+          <td><input type="radio" name="ans8" value="1" id="yes8"><label for="yes8">はい</label></td>
+          <td><input type="radio" name="ans8" value="2" id="no8"><label for="no8">いいえ</label></td>
+          <td><input type="radio" name="ans8" value="3" id="neither8"><label for="neither8">こだわらない</label></td>
+        </tr>
+        <tr>
+          <th>質問9</th>
+          <td>電子書籍をスマホでよく見る</td>
+          <td><input type="radio" name="ans9" value="1" id="yes9"><label for="yes9">はい</label></td>
+          <td><input type="radio" name="ans9" value="2" id="no9"><label for="no9">いいえ</label></td>
+          <td><input type="radio" name="ans9" value="3" id="neither9"><label for="neither9">こだわらない</label></td>
+        </tr>
+        <tr>
+          <th>質問10</th>
+          <td>動画をよく見る</td>
+          <td><input type="radio" name="ans10" value="1" id="yes10"><label for="yes10">はい</label></td>
+          <td><input type="radio" name="ans10" value="2" id="no10"><label for="no10">いいえ</label></td>
+          <td><input type="radio" name="ans10" value="3" id="neither10"><label for="neither10">こだわらない</label>
+          </td>
+        </tr>
+        <tr>
+          <th>質問11</th>
+          <td>プライバシーが心配だ</td>
+          <td><input type="radio" name="ans11" value="1" id="yes11"><label for="yes11">はい</label></td>
+          <td><input type="radio" name="ans11" value="2" id="no11"><label for="no11">いいえ</label></td>
+          <td><input type="radio" name="ans11" value="3" id="neither11"><label for="neither11">こだわらない</label>
+          </td>
+        </tr>
+        <tr>
+          <th>質問12</th>
+          <td>老眼（遠視）気味だ</td>
+          <td><input type="radio" name="ans12" value="1" id="yes12"><label for="yes12">はい</label></td>
+          <td><input type="radio" name="ans12" value="2" id="no12"><label for="no12">いいえ</label></td>
+          <td><input type="radio" name="ans12" value="3" id="neither12"><label for="neither12">こだわらない</label>
+          </td>
+        </tr>
+        <tr>
+          <th>質問13</th>
+          <td>3年以上使うつもりだ</td>
+          <td><input type="radio" name="ans13" value="1" id="yes13"><label for="yes13">はい</label></td>
+          <td><input type="radio" name="ans13" value="2" id="no13"><label for="no13">いいえ</label></td>
+          <td><input type="radio" name="ans13" value="3" id="neither13"><label for="neither13">こだわらない</label>
+          </td>
+        </tr>
+        <tr>
+          <th>質問14</th>
+          <td>スマホケースはいろいろ選びたい</td>
+          <td><input type="radio" name="ans14" value="1" id="yes14"><label for="yes14">はい</label></td>
+          <td><input type="radio" name="ans14" value="2" id="no14"><label for="no14">いいえ</label></td>
+          <td><input type="radio" name="ans14" value="3" id="neither14"><label for="neither14">こだわらない</label>
+          </td>
+        </tr>
+      </table>
+      <button type="button" id="send_mixdata">診断</button>
+    </form>
+
+    <div id="recommend">
+      <div id="sp_name">
+      </div>
+      <div id="sp_image">
+      </div>
+      <div id="sp_text">
+      </div>
+    </div>
+
+  </main>
+  <footer class="clearfix">
+  </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/xmlhttprequest.js"></script>
+
+</html>

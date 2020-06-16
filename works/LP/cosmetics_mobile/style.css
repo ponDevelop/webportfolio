@@ -1,0 +1,356 @@
+:root{
+    font-size: 16px;
+
+}
+
+body{
+    font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+    width: 100%;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+  
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+/*
+    SECITON1
+*/
+.section1{
+    width: 100%;
+    height: 460px;
+    background-image: url(./images/03.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.section1 .section1_text1{
+    position: absolute;
+    color:#00cc66;
+    font-size: 3rem;
+    font-weight: bold;
+    top: 31px;
+    left: 38px;
+    text-shadow: 2px 2px 0px #fff,
+    2px -2px 0px #fff,
+    -2px 2px 0px #fff,
+    -2px -2px 0px #fff;
+}
+
+.section1 .section1_text2{
+    position: absolute;
+    font-size: 2rem;
+    bottom: 31px;
+    right: 100px;
+    text-shadow: 2px 2px 7px #fff,
+    2px -2px 7px #fff,
+    -2px 2px 7px #fff,
+    -2px -2px 7px #fff;
+
+}
+
+/*
+    SECTION2
+*/
+.gizagiza a , .gizagiza a:after , .gizagiza a:before , .gizagiza a span {
+    content:"";
+    width:5rem;
+    height:5rem;
+    background-color:#ff0000;
+    position:absolute;
+    top:0px;
+  }
+  .gizagiza , .gizagiza a , .gizagiza a:after , .gizagiza a:before {
+    -webkit-transform: rotate(22.5deg);
+    -moz-transform: rotate(22.5deg);
+  }
+  .gizagiza a span {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    text-align: center;
+    z-index: 999;
+    line-height: 100px;
+    color: #fff;
+  }
+  .gizagiza {
+    position:relative;
+    width:100px;
+    height:100px;
+    background-color:#ff0000;
+    margin:20px 0 0 20px ;
+    z-index: 10;
+  }
+
+.section2{
+    width: 100%;
+    height: auto;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+.section2 .section2_box{
+    position: relative;
+    border:#000 2px solid;
+    width: 450px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.section2 .section2_box img{
+    position: absolute;
+    top:0;
+    left: 0%;
+    height: 100%;
+}
+.section2 .section2_box .section2_box_text1{
+    position: absolute;
+    top:0%;
+    right:10%;
+}
+.section2 .section2_box .section2_box_text2{
+    position: absolute;
+    top:20%;
+    right:10%;
+}
+.section2 .section2_box .section2_box_text2 span{
+    font-size: 1.5rem;
+}
+ 
+.section2 .section2_box .section2_box_text3 span{
+    position: absolute;
+    top:65%;
+    right:10%;
+    border: solid #000 2px;
+    padding-top:0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #FFF000;
+}
+
+.section2_text1{
+    margin-top: 103px;
+    margin-bottom: 103px;
+    text-align: center;
+    font-size: 2rem;
+}
+.section2_text2{
+    text-align: center;
+}
+
+/*
+    SECTION3
+*/
+.section3{
+    margin-top:65px;
+    margin-bottom: 112px;
+}
+.section3_text1{
+    text-align: center;
+    font-size: 2rem;
+}
+.section3_text_title{
+    font-size: 1.4rem;
+    margin-bottom: 58px;
+}
+
+.section3_box1{
+    margin-bottom: 78px;
+}
+.section3_box1 img{
+    width: 456px;
+    height: auto;
+}
+
+.section3_box2{
+    margin-bottom: 78px;
+}
+.section3_box2 img{
+    width: 456px;
+    height: auto;
+}
+
+.section3_box3{
+    margin-bottom: 85px;
+}
+.section3_box3 img{
+    width: 456px;
+    height: auto;
+}
+
+/*
+    SECTION4
+*/
+.section4{
+    margin-top:65px;
+    margin-bottom: 90px;
+}
+.section4_text1{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 51px;
+}
+
+.section4_box1{
+    width: 257px;
+    height: 300px;
+    border:1px solid #000;
+    background-color: #FFF000;
+    margin-left: 47px;
+    padding:1%;
+}
+.section4_box1_text1{
+    text-align: center;
+}
+
+.section4_box2{
+    width: 257px;
+    height: 300px;
+    border:1px solid #000;
+    background-color: #FFF000;
+    margin-left: 57px;
+    margin-right: 57px;
+    padding:1%;
+}
+.section4_box2_text1{
+    text-align: center;
+}
+
+.section4_box3{
+    width: 257px;
+    height: 300px;
+    border:1px solid #000;
+    background-color: #FFF000;
+    margin-right: 47px;
+    padding:1%;
+}
+.section4_box3_text1{
+    text-align: center;
+}
+
+
+/*
+    SECTION5
+*/
+.section5{
+    margin-top: 90px;
+    margin-bottom: 112px;
+}
+
+.section5_box1{
+    border:2px solid #000;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    background-image: url(./images/05.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.section5_box1_text1{
+    text-align: center;
+}
+.section5_box1_text1 span{
+    margin-top:20px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #000;
+    font-size: 1.8rem;
+    text-shadow: 3px 3px 5px #fff,
+    3px -3px 5px #fff,
+    -3px 3px 5px #fff,
+    -3px -3px 5px #fff;
+}
+
+.section5_box1_text2 span{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    flex-flow: column; 
+    vertical-align: top;
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #000;
+    background-color: #FFF000;
+    color:#ff0000;
+    margin-left: 100%;
+}
+
+.section5_box1_text3{
+    margin-left: 20%;
+}
+.section5_box1_text3 span{
+    font-size: 4rem;
+    line-height: 4rem;
+    text-shadow: 2px 2px 5px #fff,
+    2px -2px 5px #fff,
+    -2px 2px 5px #fff,
+    -2px -2px 5px #fff;
+}
+.section5_box1_text4{
+    text-align: center;
+}
+
+.section5_box1_text4 span{
+    border: 1.5px solid #000;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding:1rem 3rem;
+    background-color: #FFF000;
+}
+
+.section5_box1_text5{
+    width: 25%;
+    height: 3rem;
+    line-height: 3rem;
+    margin-left: 5%;
+    border: 1px solid #000;
+    text-align: center;
+    background-color: #fff;
+
+}
+.section5_box1_text6{
+    width: 25%;
+    height: 3rem;
+    line-height: 3rem;
+    margin-left: 7%;
+    margin-right: 7%;
+    border: 1px solid #000;
+    text-align: center;
+    background-color: #fff;
+}
+.section5_box1_text7{
+    width: 25%;
+    height: 3rem;
+    line-height: 1.2rem;
+    margin-right: 5%;
+    border: 1px solid #000;
+    text-align: center;
+    background-color: #fff;
+}
+.section5_box1_text7 span{
+    font-size: 0.7rem;
+}
+
+footer{
+    text-align: center;
+}

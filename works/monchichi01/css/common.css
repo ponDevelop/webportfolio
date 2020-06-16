@@ -1,0 +1,203 @@
+@charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+  font-family: 'M PLUS 1p', sans-serif; }
+
+main {
+  /*IE対策*/
+  display: block; }
+
+/*
+    全体をborderまで含める。
+*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*
+    float解除用
+*/
+.clearfix::before {
+  content: "";
+  display: block;
+  clear: both; }
+
+body {
+  width: 100%;
+  background-image: url(../images/bg/story.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0;
+  margin: 0; }
+body .bg_through {
+  widows: 100%;
+  background: rgba(255, 255, 255, 0.8); }
+body header {
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px; }
+body header ul {
+  text-align: right; }
+body header ul li {
+  display: inline-block;
+  margin-right: 20px; }
+body header ul li a {
+  list-style-type: none;
+  text-decoration: none; }
+body main {
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+body main h2 {
+  font-size: 26px;
+  margin-bottom: 50px;
+  padding-top: 20px; }
+body main h2 > span {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #ffe4c4;
+  border-radius: 10px; }
+body main article > #about {
+  width: 100%;
+  height: 600px;
+  margin-bottom: 50px; }
+body main article > #about > .image {
+  width: 55%;
+  max-width: 550px;
+  height: auto;
+  float: left;
+  margin-right: 20px; }
+body main article > #about > .image > img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%; }
+body main article > #about > .text {
+  width: 40%;
+  max-width: 400px;
+  height: auto;
+  float: right;
+  padding: 3vw;
+  line-height: 160%; }
+body main article #life {
+  width: 100%;
+  /*overflow: hidden;*/ }
+body main article #life p > span {
+  font-size: 26px;
+  color: #FFF;
+  padding: 1vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1vw; }
+body main article #life .item01 {
+  background-image: url(../images/bg/monchichi01.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 50vh;
+  position: relative;
+  left: -20%;
+  border-radius: 50%; }
+body main article #life .item01 > p {
+  text-align: center;
+  line-height: 30vh; }
+body main article #life .item02 {
+  background-image: url(../images/bg/monchichi02.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70% 50%;
+  height: 50vh;
+  position: relative;
+  left: 20%;
+  border-radius: 50%; }
+body main article #life .item02 > p {
+  text-align: center;
+  line-height: 30vh; }
+body main article #life .item03 {
+  background-image: url(../images/bg/monchichi03.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 50vh;
+  position: relative;
+  left: -20%;
+  border-radius: 50%; }
+body main article #life .item03 > p {
+  text-align: center;
+  line-height: 30vh; }
+body main article #life .item04 {
+  background-image: url(../images/bg/monchichi04.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70% 50%;
+  height: 50vh;
+  position: relative;
+  left: 20%;
+  border-radius: 50%;
+  margin-bottom: 50px; }
+body main article #life .item04 > p {
+  text-align: center;
+  line-height: 30vh; }
+body main article #goods {
+  background-color: rgba(255, 200, 0, 0.5);
+  border-radius: 20px; }
+body main article #goods .flex_container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center; }
+body main article #goods .flex_container > figure.flex_item {
+  width: 210px;
+  background-color: #ffe4c4;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 5px; }
+body main article #goods .flex_container > figure.flex_item > img {
+  width: 200px; }
+body main article #goods .flex_container > figure.flex_item > .item_name {
+  font-size: 20px;
+  margin: 10px; }
+body main article #goods .flex_container > figure.flex_item > figcaption > .price {
+  font-size: 20px;
+  background-color: #FFF000;
+  border-radius: 10px;
+  margin: 5px; }
+body footer {
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right; }
+
+/*---------------------------
+  スマホ画面
+---------------------------*/
+@media screen and (max-width: 768px) {
+  header {
+    max-width: 768px; }
+  header > nav > ul > li {
+    display: block; }
+
+  main {
+    max-width: 768px; }
+  main > article #life div P > span {
+    font-size: 16px; }
+  main > article #about > .image {
+    width: 100% !important;
+    height: auto !important;
+    clear: both !important; }
+  main > article #about > .text {
+    width: 100% !important;
+    height: auto !important;
+    clear: both !important;
+    padding: 3vw; }
+
+  footer {
+    max-width: 768px; } }
+
+/*# sourceMappingURL=common.css.map */
