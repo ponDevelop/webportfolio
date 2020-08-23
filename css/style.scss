@@ -271,19 +271,22 @@
 
 .skill_chart_box{
     display: flex;
+    text-align: center;
     width: 100%;
 
     .skill_bar_chart {
-        width:48%;
-        height:30vh;
+        width:80%;
+        height:40%;
         margin-bottom:10vh
     }
-    
+
+    /*
     .skill_bar_chart2 {
         width:48%;
         height:30vh;
         margin-bottom:5vh
     }
+    */
 }
 
 
